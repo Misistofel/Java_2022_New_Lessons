@@ -8,10 +8,10 @@ public class Main {
     public static void main(String[] args) {
         List<Employee> listOfEmployee = new ArrayList<>();
 
-        Employee em1 = new Employee(3, "Kateryna", "Suprun", 5000);
-        Employee em2 = new Employee(1, "Sergyi", "Korotun", 6000);
-        Employee em3 = new Employee(2, "Mariia", "Viter", 7000);
-        Employee em4 = new Employee(4, "Mariia", "Shulga", 8000);
+        Employee em1 = new Employee(3, "Kateryna", "Suprun", 5000, true);
+        Employee em2 = new Employee(1, "Sergyi", "Korotun", 6000, false);
+        Employee em3 = new Employee(2, "Mariia", "Viter", 7000, false);
+        Employee em4 = new Employee(4, "Mariia", "Shulga", 8000, true);
 
         listOfEmployee.add(em1);
         listOfEmployee.add(em2);
