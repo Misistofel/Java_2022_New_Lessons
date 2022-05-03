@@ -29,6 +29,7 @@ public class HashSetExample2 {
         HashSet<Integer>substract = new HashSet<>(hashSet1);
         substract.remove(hashSet2);
         System.out.println(substract);//видаляє те що належить одній множині
+        ///
 
 
     }
