@@ -17,24 +17,25 @@ public class Employee implements Comparable<Employee> {
 
     @Override
     public String toString() {
-        return "Emplotee{" +
+        return "Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", salary=" + salary +
+                ", married=" + married +
                 '}';
     }
 
-//    @Override
-//    public int compareTo(Employee anotherEmp) {
-//        if (this.id == anotherEmp.id) {
-//            return 0;
-//        } else if (this.id < anotherEmp.id) {
-//            return -1;
-//        } else {
-//            return 1;
-//        }
-//    }
+    @Override
+    public int compareTo(Employee anotherEmp) {
+        if (this.id == anotherEmp.id) {
+            return 0;
+        } else if (this.id < anotherEmp.id) {
+            return -1;
+        } else {
+            return 1;
+        }
+    }
 
 //    //Or we can do it like this
 //    @Override
@@ -58,15 +59,17 @@ public class Employee implements Comparable<Employee> {
 //    }
 
     //to sort by boolean - sort by married
-    @Override
-    public int compareTo(Employee anotherEmp) {
-        boolean result = (this.married==anotherEmp.married);
-        if(result == true){
-            return 0;
-        } else {
-            return -1;
-        }
-    }
+    //Порівнюємо boolean
+//Створюємо проміжні змінні, в які будемо сетапити числа, замість буліанів.
+//Витягуєм значення boolean з нашого класу. (this.getBoolValue())
+//Якщо значення рівне true, то присвоюємо змінній 1. В іншому випадку, присвоюємо 0.
+//Порівнюємо конвертовані значення як int.
+//    @Override
+//    public int compareTo(@NotNull MyObject other) {
+//        int b1 = this.getBoolValue() ? 1 : 0;
+//        int b2 = other.getBoolValue() ? 1 : 0;
+//        return b2 - b1;
+//    }
 }
 
 

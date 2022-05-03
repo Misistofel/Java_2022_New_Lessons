@@ -44,5 +44,8 @@ public class Main {
         System.out.println(w);
         Day newDay = Day.values()[index+2];
         System.out.println(newDay);
+
+        NameOfDog nd = NameOfDog.DAN;
+
     }
 }

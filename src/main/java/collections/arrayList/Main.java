@@ -99,6 +99,11 @@ public class Main {
 
       //  System.out.println("Index of element 'Is anubody home?' is: " + listT.indexOf("Is anubody home? Dima  , Happy  Easter ! Thanls a lot!"));
 
+        StringArrayList sal = new StringArrayList();
+        sal.add("Olga");
+        sal.add("Irena");
+
+        System.out.println("SAL: " + sal.get(1));
 
     }
 }

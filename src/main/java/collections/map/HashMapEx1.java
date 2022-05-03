@@ -19,7 +19,7 @@ public class HashMapEx1 {
 // 111115=Inna Polupan, 111114=Svyryd Vorohta, 111116=Olexandr Lytvyn}
 
         //HashMap doesn't remember the ORDER os elements!!!
-        System.out.println(map1);
+        System.out.println("Перелік пар в map  " + map1);
         System.out.println(map1.get(111111));
         System.out.println(map1.size());
        // map1.remove(111112);
