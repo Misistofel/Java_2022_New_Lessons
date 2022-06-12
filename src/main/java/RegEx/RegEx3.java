@@ -11,6 +11,13 @@ public class RegEx3 {
         System.out.println(result);
 
         String [] array = s1.split(" ");
-        System.out.println(Arrays.toString(array));
+        System.out.println("This is SPLIT method: " + Arrays.toString(array));
+            for (int i = 0; i < array.length; i++) {
+               if( array[i].matches("\\w+@\\w+\\.(com|ua)")){
+                    System.out.println("FINALLY RESULT: " + array[i]);
+                }
+            }
+
+
     }
 }
