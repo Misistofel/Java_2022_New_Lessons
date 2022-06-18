@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class RegExIP2 {
 
-    static String s1 = "My IP address is 182.25.91.05";
+    static String s1 = "My IP address is 182.25.91.05 and 183.25.91.06";
 
     public static void main(String[] args) {
         String[] array = s1.split(" ");

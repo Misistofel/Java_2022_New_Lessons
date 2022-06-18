@@ -63,12 +63,24 @@ public class RegEx2 {
 
         //Вивести все після =
         System.out.println("Print all after symboll = ");
-        String s5 = "the weight = thirty nine kilo";
+        String s5 = "the weight = thirty nine kilo 3";
 
-        Pattern p5 = Pattern.compile("=\\+(\\w|\\s)");
-        Matcher m5 = p5.matcher(s5);
+        //Pattern p6 = Pattern.compile("=(.+\\w?)");
+        Pattern p6 = Pattern.compile("=(.+)");
+       // Pattern p6 = Pattern.compile("=(\b(\\w|\\d|\\s?))");
+        Matcher m5 = p6.matcher(s5);
         while(m5.find()){
             System.out.println(m5.group());
         }
+
+//        int [] array = {2,5,11};
+//        for (int a:array) {
+//            System.out.println(a);
+//        }
+//
+//        int i =5;
+//        String b = String.valueOf((i));
+
     }
 }
+
