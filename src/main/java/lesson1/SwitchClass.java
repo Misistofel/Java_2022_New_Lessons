@@ -4,51 +4,51 @@ public class SwitchClass {
   public static void main(String[] args) {
 
     String a = "Wen";
-    switch (a) {
-      case "Mon":
-        System.out.println("Working day 1");
-        break;
-      case "Tue":
-        System.out.println("Working day 2");
-        break;
-      case "Wen":
-        System.out.println("Working day 3");
-        break;
-      case "Thi":
-        System.out.println("Working day 4");
-        break;
-      case "Fri":
-        System.out.println("Working day 5");
-        break;
-      case "Sut":
-        System.out.println("Weekend 6");
-        break;
-      case "Sun":
-        System.out.println("Weekend 7");
-        break;
-
-    }
-
-    System.out.println(" ");
-    switch (a) {
-      case "Mon":
-        System.out.println("Working day 1");
-      case "Tue":
-        System.out.println("Working day 2");
-      case "Wen":
-        System.out.println("Working day 3");
-      case "Thi":
-        System.out.println("Working day 4");
-      case "Fri":
-        System.out.println("Working day 5");
-      case "Sut":
-        System.out.println("Weekend 6");
-      case "Sun":
-        System.out.println("Weekend 7");
-      default:
-        System.out.println(" Неправильне значення");
-
-    }
+//    switch (a) {
+//      case "Mon":
+//        System.out.println("Working day 1");
+//        break;
+//      case "Tue":
+//        System.out.println("Working day 2");
+//        break;
+//      case "Wen":
+//        System.out.println("Working day 3");
+//        break;
+//      case "Thi":
+//        System.out.println("Working day 4");
+//        break;
+//      case "Fri":
+//        System.out.println("Working day 5");
+//        break;
+//      case "Sut":
+//        System.out.println("Weekend 6");
+//        break;
+//      case "Sun":
+//        System.out.println("Weekend 7");
+//        break;
+//
+//    }
+//
+//    System.out.println(" ");
+//    switch (a) {
+//      case "Mon":
+//        System.out.println("Working day 1");
+//      case "Tue":
+//        System.out.println("Working day 2");
+//      case "Wen":
+//        System.out.println("Working day 3");
+//      case "Thi":
+//        System.out.println("Working day 4");
+//      case "Fri":
+//        System.out.println("Working day 5");
+//      case "Sut":
+//        System.out.println("Weekend 6");
+//      case "Sun":
+//        System.out.println("Weekend 7");
+//      default:
+//        System.out.println(" Неправильне значення");
+//
+//    }
 
     System.out.println("----------------------");
     int b = 2;
@@ -84,6 +84,23 @@ public class SwitchClass {
       default:
         System.out.println("wrong value");
 
+    }
+    String day = "Fr";
+    switch (day){
+      case "MON":
+        System.out.println("Go to work!");
+      case "Tue":
+        System.out.println("Go to work!");
+      case "Wen":
+        System.out.println("Go to work!");
+      case "Thi":
+        System.out.println("Go to work!");
+      case "Fr":
+        System.out.println("Go to work!");
+      case "St":
+        System.out.println(" Ok, sleep!");
+      case "Sun":
+        System.out.println(" Ok, sleep!");
     }
   }
 }

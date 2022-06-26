@@ -1,7 +1,48 @@
 package lesson1;
+import java.lang.reflect.Array;
+
+import static java.lang.Math.*;
 
 public class Numerical_variables {
+   String name;
+   String surname;
+   int age;
+
+  public Numerical_variables(String name, String surname, int age) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+    System.out.println("Parent constructor!");
+  }
+
+
+
+
+
+ int [] arr = {3,6,9,11};
+  public  void example(){
+    for (int i = 0; i <arr.length ; i++) {
+      if(arr[i]%3==0){
+
+      }else {
+        System.out.println("Це число не ділиться без остатку " + arr[i]);
+      }
+    }
+  }
+
+  public Numerical_variables() {
+  }
+
   public static void main(String[] args) {
+    Numerical_variables nv = new Numerical_variables();
+    nv.example();
+
+    int [] array = new int[10] ;
+    array[2]= 2;
+
+    System.out.println("Корінь з числа 16 = " + sqrt(16));
+    System.out.println("ldf d lheujve cnegtyb = " + pow(2 , 2));
+    System.out.println("Мінімум є " + min(4,14));
 
     int a = 3;
     int b = 5;
@@ -17,6 +58,7 @@ public class Numerical_variables {
     boolean n = c!=d;
     String i = "Hello";
     String ii = " world!";
+
     System.out.println(i==ii);
 
     i = ii;

@@ -17,14 +17,14 @@ public class HashCodeEx1 {
         map.put(st3, 3.9);
         //lets add clon of st1---> st4
         map.put(st4, 5.0);
-        //check if itmap contains st4 now
+        //check if map contains st4 now
         boolean result = map.containsKey(st4);
         System.out.println("Result = " + result);// FALSE - why?
         System.out.println(st1.equals(st4));// TRUE: st1 equal st4!!!
         //We need to add method HashCode to Student- did it
 
         System.out.println(st1.hashCode());//-2085817015
-        System.out.println(st2.hashCode());//271342490
+        System.out.println(st4.hashCode());//271342490
 
 
 

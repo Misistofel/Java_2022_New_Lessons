@@ -22,18 +22,18 @@ public class Student {
                 '}';
     }
 //two students are equal if they have the same "course", "name", "surname"
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
-        return course == student.course && Objects.equals(name, student.name) && Objects.equals(surname, student.surname);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, surname, course);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Student student = (Student) o;
+//        return course == student.course && Objects.equals(name, student.name) && Objects.equals(surname, student.surname);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name, surname, course);
+//    }
 
 
 
