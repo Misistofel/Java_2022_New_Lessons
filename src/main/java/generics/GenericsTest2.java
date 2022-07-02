@@ -40,15 +40,12 @@ class GenMethod{
 }
 
 class Parent {
-    public void abc(Info<String > info) {
-        String s = info.getValue();
+    public void abc(Info<Integer> info) {
+        Integer s = info.getValue();
     }
 }
-//і з оверрайдом теж буде проблема
-//class Child extends Parent{
-//    @Override
-//    public void abc(Info<Integer> info) {
-//        Integer s = info.getValue();
-//    }
-//}
+
+class Child extends Parent{
+
+}
 
