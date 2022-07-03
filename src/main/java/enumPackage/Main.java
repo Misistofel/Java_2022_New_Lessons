@@ -47,5 +47,8 @@ public class Main {
 
         NameOfDog nd = NameOfDog.DAN;
 
+        NowMonth nm = new NowMonth(Month.JULY);
+        nm.getMonth();
+
     }
 }
