@@ -1,5 +1,9 @@
 package enumPackage;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
         Music mc = Music.CLASSIC;//Первый способ создания объекта класса
@@ -49,6 +53,14 @@ public class Main {
 
         NowMonth nm = new NowMonth(Month.JULY);
         nm.getMonth();
+        Month [] mon = Month.values();
+        for (Month s: mon) {
+            System.out.println(s);
+        }
+
+        Map <Integer, String> map = new HashMap<>();
+
+
 
     }
 }
