@@ -43,7 +43,6 @@ public class ChildOne extends ParentOne{
         try {
             abc();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
         }
     }
 }

@@ -1,8 +1,6 @@
 package collections.map;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Example2 {
     public static void main(String[] args) {
@@ -20,6 +18,8 @@ public class Example2 {
         Student st1 = new Student("Oleh", "Baran", 2);
         Student st2 = new Student("Irena", "Karpa", 5);
         Student st3 = new Student("Iren", "Zeta", 4);
+
+
 
     }
 }

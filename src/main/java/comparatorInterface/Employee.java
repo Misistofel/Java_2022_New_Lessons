@@ -1,5 +1,7 @@
 package comparatorInterface;
 
+import java.util.Objects;
+
 public class Employee implements Comparable<Employee> {
     private int id;
     private String name;
@@ -46,4 +48,16 @@ public class Employee implements Comparable<Employee> {
         return(this.id - o.id);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return id == employee.id && age == employee.age && salary == employee.salary && Objects.equals(name, employee.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age, salary);
+    }
 }
