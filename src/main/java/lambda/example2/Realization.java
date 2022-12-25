@@ -61,6 +61,7 @@ public class Realization {
         System.out.println("Кількість студентів менше 30 років, з іменем на 4 або менше літери = " +
                 +count);
 //----Перетворити Ліст стрінгів на Ліст інтив
+
         List<String> list = Arrays.asList("Hello", "wonderfull", "world!");
         List<Integer> list2 = list.stream()
                 .map(el -> el.length())
@@ -69,6 +70,7 @@ public class Realization {
 
 //-----------------------------------------------------------------------------
         //--Маємо ліст стрінгів. Вивести великими літерами слова з двох літер, які містять букву "і"
+
         List<String> list3 = Arrays.asList("hello", "it", "is", "me");
         List<String> list4 = list3.stream()
                 .filter(e -> e.length() == 2)
@@ -98,6 +100,8 @@ public class Realization {
         System.out.println(l2);
 //-------------------------------------------------------------------------------------------------------------------
 //вивести  елементи масиву, якщо елемент  / на 3 без остачі, то поділити його на 3 і вивести на екран
+
+//!!!
 
         int[] m1 = {3, 12, 14, 15};
         m1 = Arrays.stream(m1)
@@ -151,12 +155,16 @@ public class Realization {
                 .filter(ss -> ss.age == 22 && ss.avgGrade <= 4)
                 .collect(Collectors.toList());
         System.out.println("students3 = " + students3);
+        //  ---------Відсотрувати студентів: взяти лише дівчат,  імена згобити апер кейсом і відсортувати за віком
+
+
 
 
 //-----------Метод foreach - допомагає пройтися по віх елементах та , наприклад, вивести їх на екран
         //Метод foreach вертає void!!!!
         //--------Подвоїти елемент масиву та вивести на екран----------
         int[] arrayMy = new int[]{11, 21, 31, 41, 51};
+
         System.out.print("arrayMy2 : ");
         Arrays.stream(arrayMy)
                 .forEach(e -> {
@@ -175,8 +183,9 @@ public class Realization {
         //------Приклад: знайти добуток всіх елементів масиву------
         List<Integer> li = Arrays.asList(5, 8, 2, 4, 3);
 
-        int result = li.stream().reduce((accumulator, element ) ->
-                accumulator * element).get();
+        int result = li.stream()
+                .reduce((accumulator, element) ->
+                        accumulator * element).get();
         System.out.println("Result: " + result);
         //як це працює:
         // accumulator = 5(перше число з масиву)
@@ -186,18 +195,31 @@ public class Realization {
 
         //-----------Метод sorted- сортує масив----------------------------------------
         //тут нічого зайвого не пишемо , бо джава знає як сортувати int
-        int [] arrayK = {3,8,1,5,9,12,4,21,81,7,18};
+        int[] arrayK = {3, 8, 1, 5, 9, 12, 4, 21, 81, 7, 18};
+        //!!!!!!!!!
         arrayK = Arrays.stream(arrayK)
                 .sorted()
                 .toArray();
         System.out.println("arrayK): ");
         System.out.println(Arrays.toString(arrayK));
 
+        //-----------Метод chaning- сортує масив----------------------------------------
+        //----Відсортувати масив, щоб лишилися лише непарні числа і поділити на 3 ті,
+        // що діляться без остачі і знайдемо суму тих змінених чисел, що лишилися
+        int[] arra = {3, 8, 1, 5, 9, 12, 4, 21, 81, 7, 18};
+        int r = Arrays.stream(arra)
+                .filter(e -> e % 2 != 0)
+                .map(e -> {
+                    if (e % 3 == 0) {
+                        e = e / 3;
+                    }
+                    return e;
+                })
+                .sum();
+        System.out.println("R: " + r );
+
+      //  ---------Відсотрувати студентів: взяти лише дівчат,  імена згобити апер кейсом і відсортувати за віком
 
 
 
-
-
-
-    }
-}
+    }}
