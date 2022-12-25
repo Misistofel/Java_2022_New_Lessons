@@ -8,7 +8,7 @@ public class StreamTest {
 
         List<String> list = new ArrayList<>();
         list.add("Privet");
-        list.add("Jak spravy?");
+        list.add("Jak sprav?");
         list.add("OK");
         list.add("POka");
 
